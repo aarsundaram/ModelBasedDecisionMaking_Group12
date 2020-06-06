@@ -25,7 +25,7 @@ def Muskingum(C1, C2, C3, Qn0_t1, Qn0_t0, Qn1_t0):
 class DikeNetwork(object):
     def __init__(self):
         # planning steps
-        self.num_planning_steps = 3
+        self.num_planning_steps = 4
         self.num_events = 30
         
         # load network
@@ -51,7 +51,7 @@ class DikeNetwork(object):
         self.sb = True
 
         # Planning window [y], reasonable for it to be a multiple of num_planning_steps
-        self.n = 200
+        self.n = 120
         # Years in planning step:
         self.y_step = self.n//self.num_planning_steps
         # Step of dike increase [m]
